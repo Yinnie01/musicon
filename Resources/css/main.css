@@ -202,7 +202,7 @@ Store Page Rulesets
 .details p {
     line-height: 1.5rem;
     font-size: 1.25rem;
-    /* color: rgba(0, 0, 0,0.8); */
+
 }
 
 .name, .description, .price, del {
@@ -219,6 +219,7 @@ Store Page Rulesets
     height: 100%;
     font-size: 13px;
     overflow: auto;
+    color: rgba(0, 0, 0,0.8);
   }
   
   .price {
