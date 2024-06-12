@@ -39,9 +39,10 @@ footer {
     width: 100%;
     background-color:rgba(247, 93, 175, 0.7);
     height: 3rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     z-index: 20;
+    margin-top: 4.2%;
 }
 
 header {
@@ -114,8 +115,8 @@ Home Page Rulesets
 
 #introduction {
     text-align: center;
-    margin-top: 12%;
-    margin-bottom: 4%;
+    margin-top: 10.2%;
+    display: inline-block;
 }
 
 #introduction h1 {
@@ -124,7 +125,6 @@ Home Page Rulesets
 
 #introduction p {
     margin: 5% auto;
-    font-size: 1.125rem;
     font-weight: 400;
     line-height: 2.5rem;
     font-size: 1.5rem;
@@ -138,7 +138,7 @@ Home Page Rulesets
     margin: 0 auto;
     color: #ffffff;
     background-color: #4c7ef3;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     font-size: 1.5rem;
     margin-bottom: 3rem;
 }
@@ -147,19 +147,31 @@ Home Page Rulesets
     background-color: #26A69A;
 }
 
+.home-footer {
+    margin-top: 3.9rem;
+}
+
 /* 
 ===============================
 Store Page Rulesets 
 ===============================
 */
 #showcase {
-    margin-top: 5%;
-    margin-bottom: 15%;
+    margin-top: 5rem;
+    /* margin-bottom: 15%; */
 }
 
 .instrument {
     width: 90%;
     overflow: auto;
+    margin: 2% auto;
+    padding: 2% 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+}
+
+.instrument:last-of-type {
+    margin-bottom: 0;
 }
 
 .image {
@@ -168,23 +180,38 @@ Store Page Rulesets
     width: 32%;
     min-width: 6.25rem;
     margin: 0 auto;
+    height: 16rem;
+    /* border: 2px solid red; */
+    object-fit: cover;
 }
 
 .details {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     width: 60%;
-    margin: -1% auto;
     padding: 2%;
 }
 
+.details h2 {
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #4c7ef3;
+}
+
+.details p {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    /* color: rgba(0, 0, 0,0.8); */
+}
+
 .name, .description, .price, del {
-    /* color: #000000; */
+    color: #000000;
     text-align: left;
   }
 
   .description, .price {
-    margin-top: 0;
+    margin-top: 0;  
     margin-bottom: 16px;
   }
 
@@ -209,6 +236,14 @@ Store Page Rulesets
     text-align: left;
   }
 
+  .deal {
+    color: green;
+    font-weight: bold;
+  }
+
+  .store-footer {
+    margin-top: 0;
+  }
   /* 
   ================================
   Contact Page Rulesets 
@@ -217,43 +252,71 @@ Store Page Rulesets
 
 #connection {
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 4%;
+    margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
+
+
+#top {
+    margin: 5% auto;
+}
   
-  #top {
-    margin: 15% auto;
-  }
-  
-  #top h2 {
+#top h2 {
     margin: 3%;
-    font-size: 30px;
-    font-weight: normal;
-  }
+    font-size: 3rem;
+    font-weight: bold;
+}
   
-  #top p {
-    margin: 3%;
-    font-size: 18px;
-    font-weight: lighter;
-  }
+#top p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin: 5% auto;
+}
   
-  .contact {
-    width: 100%;
-    margin: 10% auto;
-  }
+.contact {
+    margin: 0.5rem 2rem;
+    display: inline-flex;
+    flex-direction: column;
+    width: 25%;
+    height: 7rem;
+    /* background-color: #4c7ef3; */
+    padding: 2rem 1rem;
+    vertical-align: middle;
+    background-color: #4c7ef3;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 0.5rem;
+}
+
+.contact:hover {
+    background-color: #26A69A;
+}
   
-  .contact p, .contact ul {
-    margin: 1%;
-    font-size: 16px;
-    font-weight: lighter;
-  }
-  
-  #location {
+.contact p, .contact ul {
+    /* margin: 1%; */
+    /* padding: 1%; */
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    /* color: rgba(0, 0, 0,0.8); */
+}
+
+
+
+.contact-footer {
+    margin-top: 4rem;
+}
+
+#location li {
+    padding-bottom: 1rem;
+}
+/*   
+#location {
     margin: 0;
     padding: 0;
     list-style-type: none;
-  }
+} */
   
