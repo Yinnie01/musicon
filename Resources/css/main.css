@@ -35,7 +35,7 @@ footer {
     width: 100%;
     background-color:rgba(247, 93, 175, 0.7);
     height: 3rem;
-    position: relative;
+    position: fixed;
     bottom: 0;
     z-index: 20;
     margin-top: 4.2%;
@@ -362,7 +362,6 @@ Store Page Rulesets
 #top h2 {
     margin: 3%;
     font-size: 3rem;
-    font-weight: bold;
 }
   
 #top p {
@@ -381,7 +380,7 @@ Store Page Rulesets
     /* background-color: #4c7ef3; */
     padding: 2rem 1rem;
     vertical-align: middle;
-    background-color: #4c7ef3;
+    background-color: rgba(76, 126, 243, 0.8);
     justify-content: center;
     color: #ffffff;
     border-radius: 0.5rem;
@@ -440,7 +439,7 @@ Store Page Rulesets
         width: 80%;
         height: auto;
         padding: 1rem 1rem;
-        background-color: #4c7ef3;
+        /* background-color: #4c7ef3; */
         color: #ffffff;
         border-radius: 0.5rem;
     }
