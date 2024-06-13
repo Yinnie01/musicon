@@ -179,6 +179,7 @@ Home Page Rulesets
     #introduction {
         margin-top: 5rem;
         margin-bottom: 0;
+        height: 100vh;
     }
 
     #introduction h1 {
@@ -203,8 +204,8 @@ Home Page Rulesets
         background-color: #4c7ef3;
         border-radius: 0.5rem;
         font-size: 1.5rem;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin-bottom: 4rem;
+        margin-top: 6rem;
     }
 
     #introduction a:hover{
@@ -212,6 +213,8 @@ Home Page Rulesets
     }
 
     .home-footer {
+        position: fixed;
+        bottom: 0;
         margin: 0;
     }
 }
