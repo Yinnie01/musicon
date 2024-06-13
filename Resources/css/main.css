@@ -8,11 +8,7 @@ html {
     width: 100vw;
 }
 
-@media only screen and (max-width: 480px) {
-    html {
-        font-size: 14px;
-    }
-}
+
 
 * {
     color: #ffffff;
@@ -104,6 +100,31 @@ h1.branding {
     color: #4c7ef3;
 }
 
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+    .nav-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar li {
+        margin: 0;
+    }
+    .navbar .mobile-view {
+        display: none;
+    }
+    h1.branding {
+        font-weight: 600;
+        font-size: 2em;
+    }
+
+}
 
 
 /*
@@ -111,7 +132,6 @@ h1.branding {
 Home Page Rulesets 
 =============================
 */
-
 
 #introduction {
     text-align: center;
@@ -149,6 +169,51 @@ Home Page Rulesets
 
 .home-footer {
     margin-top: 3.9rem;
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+        
+    #introduction {
+        margin-top: 5rem;
+        margin-bottom: 0;
+    }
+
+    #introduction h1 {
+        font-size: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #introduction p {
+        font-weight: 400;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.125rem;
+        margin-top: 0;
+    }
+
+    #introduction a {
+        display: block;
+        width: 50%;
+        padding: 5% 3%;
+        color: #ffffff;
+        background-color: #4c7ef3;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    #introduction a:hover{
+        background-color: #26A69A;
+    }
+
+    .home-footer {
+        margin: 0;
+    }
 }
 
 /* 
@@ -245,6 +310,33 @@ Store Page Rulesets
   .store-footer {
     margin-top: 0;
   }
+
+
+  @media only screen and (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+    .image {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        min-width: 6.25rem;
+        margin: 0 auto;
+        height: 16rem;
+        /* border: 2px solid red; */
+        object-fit: cover;
+    }
+    
+    .details {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        padding: 2%;
+    }
+    .details h2 {
+      padding-top: 1.5rem;
+    }
+}
   /* 
   ================================
   Contact Page Rulesets 
@@ -314,10 +406,51 @@ Store Page Rulesets
 #location li {
     padding-bottom: 1rem;
 }
-/*   
-#location {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-} */
-  
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+    #connection {
+        margin-top: 5rem;
+    }
+
+    #top h2 {
+        font-size: 3rem;
+        font-weight: 400;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 0;
+    }
+
+    #top p {
+        font-weight: 400;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.125rem;
+        margin-top: 0;
+        width: 80%;
+    }
+    .contact {
+        margin: 0.5rem auto;
+        display: block;
+        width: 80%;
+        height: auto;
+        padding: 1rem 1rem;
+        background-color: #4c7ef3;
+        color: #ffffff;
+        border-radius: 0.5rem;
+    }
+
+    .contact:last-of-type {
+        margin-bottom: 3rem;
+    }
+
+    #location li {
+        padding-bottom: 0.5rem;
+    }
+    .contact-footer {
+        position: fixed;
+        bottom: 0;
+        margin-top: 0;
+    }
